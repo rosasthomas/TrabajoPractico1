@@ -119,6 +119,8 @@ void opciones(float numeroUno, float numeroDos)
         }
         system("pause");
         system("cls");
+        printf("El primer numero es: %.2f\n", numeroUno);
+        printf("El segundo numero es: %.2f\n", numeroDos);
     }
     while(opcion != 5);
 }
