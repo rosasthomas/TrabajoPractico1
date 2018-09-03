@@ -56,20 +56,11 @@ void calcularTodo(float numeroUno, float numeroDos, float *suma, float *resta, f
 
     *suma = sumar(numeroUno, numeroDos);
     *resta = restar(numeroUno, numeroDos);
-    if(numeroDos == 0)
-    {
-        *division = 1111111111;
-    }
-    else
-    {
     *division = dividir(numeroUno, numeroDos);
-    }
     *multiplicacion = multiplicar(numeroUno, numeroDos);
     if(numeroUno == 0)
     {
         *factorialUno = 1;
-    }else if(numeroUno < 0){
-        *factorialUno = 0;
     }
     else
     {
@@ -79,9 +70,6 @@ void calcularTodo(float numeroUno, float numeroDos, float *suma, float *resta, f
     if(numeroDos == 0)
     {
         *factorialDos = 1;
-    }else if(numeroDos < 0)
-    {
-        *factorialDos = 0;
     }
     else
     {
@@ -89,13 +77,69 @@ void calcularTodo(float numeroUno, float numeroDos, float *suma, float *resta, f
     }
 }
 
-void mostrarResultados(float suma, float resta, float dividir, float multiplicar, float factorialUno, float factorialDos)
+void mostrarResultados(float suma, float resta, float dividir, float multiplicar, float factorialUno, float factorialDos, int divisionPorCero, int factorialNegativoUno, int factorialNegativoDos)
 {
     printf("\n\nRESULTADOS: \n");
-    printf("La suma es: %.2f\n", suma);
+
+    printf("\nLa suma es: %.2f\n", suma);
     printf("La resta es: %.2f\n", resta);
-    printf("La division es: %.2f\n", dividir);
+    if(divisionPorCero == 0)
+    {
+        printf("La division es: %.2f\n", dividir);
+    }
+    else
+    {
+        printf("No se puede dividir un operando por 0\n");
+    }
+
     printf("La multiplicacion es: %.2f\n", multiplicar);
-    printf("El factorial del primer operando es: %.2f\n", factorialUno);
-    printf("El factorial del segundo operando es: %.2f\n", factorialDos);
+
+    if(factorialNegativoUno == 0)
+    {
+        printf("El factorial del primer operando es: %.2f\n", factorialUno);
+    }
+    else
+    {
+        printf("No se puede factorizar por un numero negativo.\n");
+    }
+    if(factorialNegativoDos == 0)
+    {
+        printf("El factorial del segundo operando es: %.2f\n", factorialDos);
+    }
+    else
+    {
+        printf("No se puede factorizar por un numero negativo.\n");
+    }
+}
+
+void comprobarDivisionPorCero(int *divisionPorCero, float numeroDos)
+{
+    if(numeroDos == 0)
+    {
+        *divisionPorCero = 1;
+    }
+    else
+    {
+        *divisionPorCero = 0;
+    }
+}
+
+void comprobarFactorialNegativo(int *factorialNegativoUno, int *factorialNegativoDos, float numeroUno, float numeroDos)
+{
+    if (numeroUno < 0)
+    {
+        *factorialNegativoUno = 1;
+    }
+    else
+    {
+        *factorialNegativoUno = 0;
+    }
+    if (numeroDos < 0)
+    {
+        *factorialNegativoDos = 1;
+    }
+    else
+    {
+        *factorialNegativoDos = 0;
+    }
 }

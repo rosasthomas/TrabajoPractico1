@@ -57,5 +57,8 @@ float factorial(float);
  *
  */
 void calcularTodo(float, float, float*, float*, float*, float*, float*, float*);
+void mostrarResultados(float, float, float, float, float, float, int, int, int);
 
-void mostrarResultados(float, float, float, float, float, float);
+void comprobarDivisionPorCero(int*, float);
+
+void comprobarFactorialNegativo(int*, int*, float, float);
