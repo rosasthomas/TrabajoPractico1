@@ -5,7 +5,7 @@
 
 int main()
 {
-    opciones();
+    opciones(); //Se llama a la funcion opciones
 
     return 0;
 }

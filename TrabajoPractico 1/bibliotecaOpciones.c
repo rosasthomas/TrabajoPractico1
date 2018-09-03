@@ -24,26 +24,26 @@ void opciones(void)
     {
         printf("\n1.Ingresar el primer operando.\n");
         printf("2.Ingresar el segundo operando.\n");
-        printf("3.Calcular todas las operaciones.\n");
+        printf("3.Calcular todas las operaciones.\n");  //menu de opciones
         printf("4.Informar resultados.\n");
         printf("5.Salir\n");
         printf("\nIngrese una opcion: ");
         scanf("%d", &opcion);
 
-        switch(opcion)
+        switch(opcion) //evaluar que opcion se elige
         {
         case 1:
-            numeroUno = pedirNumero("Ingrese el primer operando: ");
+            numeroUno = pedirNumero("Ingrese el primer operando: ");// se llama a la funcion de pedir un numero
             break;
         case 2:
             numeroDos = pedirNumero("Ingrese el segundo operando: ");
             break;
-        case 3:
+        case 3: //se llama a las funciones de comprobacion y para calcular los resultados
             calcularTodo(numeroUno, numeroDos, &suma, &resta, &division, &multiplicar, &factorialUno, &factorialDos);
             comprobarDivisionPorCero(&divisionPorCero, numeroDos);
             comprobarFactorialNegativo(&factorialNegativoUno, &factorialNegativoDos, numeroUno, numeroDos);
             break;
-        case 4:
+        case 4: // se muestran los resultados de las operaciones
             system("pause");
             system("cls");
             printf("El primer numero es: %.2f\n", numeroUno);

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "bibliotecaCalculos.h"
 
-float sumar(float numeroUno, float numeroDos)
+float sumar(float numeroUno, float numeroDos) //funcion para realizar una suma
 {
     float suma;
 
@@ -11,7 +11,7 @@ float sumar(float numeroUno, float numeroDos)
     return suma;
 }
 
-float restar(float numeroUno, float numeroDos)
+float restar(float numeroUno, float numeroDos) //funcion para realizar una resta
 {
     float resta;
 
@@ -20,7 +20,7 @@ float restar(float numeroUno, float numeroDos)
     return resta;
 }
 
-float dividir(float numeroUno, float numeroDos)
+float dividir(float numeroUno, float numeroDos) //funcion para realizar una division
 {
     float dividir;
 
@@ -29,7 +29,7 @@ float dividir(float numeroUno, float numeroDos)
     return dividir;
 }
 
-float multiplicar(float numeroUno, float numeroDos)
+float multiplicar(float numeroUno, float numeroDos) //funcion para realizar una multiplicacion
 {
     float multiplicar;
 
@@ -39,7 +39,7 @@ float multiplicar(float numeroUno, float numeroDos)
 
 }
 
-float factorial(float numero)
+float factorial(float numero) //funcion para realizar un factorial
 {
     int i;
     long long int resultado = 1;
@@ -51,14 +51,15 @@ float factorial(float numero)
     return resultado;
 }
 
-void calcularTodo(float numeroUno, float numeroDos, float *suma, float *resta, float *division, float *multiplicacion, float *factorialUno, float *factorialDos)
+void calcularTodo(float numeroUno, float numeroDos, float *suma, float *resta, float *division, float *multiplicacion,
+                  float *factorialUno, float *factorialDos) //funcion que llama a las funciones de los calculos
 {
 
     *suma = sumar(numeroUno, numeroDos);
     *resta = restar(numeroUno, numeroDos);
     *division = dividir(numeroUno, numeroDos);
     *multiplicacion = multiplicar(numeroUno, numeroDos);
-    if(numeroUno == 0)
+    if(numeroUno == 0) //se comprueba si el numero a factorizar es 0
     {
         *factorialUno = 1;
     }
@@ -77,13 +78,14 @@ void calcularTodo(float numeroUno, float numeroDos, float *suma, float *resta, f
     }
 }
 
-void mostrarResultados(float suma, float resta, float dividir, float multiplicar, float factorialUno, float factorialDos, int divisionPorCero, int factorialNegativoUno, int factorialNegativoDos)
+void mostrarResultados(float suma, float resta, float dividir, float multiplicar, float factorialUno, float factorialDos,
+                       int divisionPorCero, int factorialNegativoUno, int factorialNegativoDos) //funcion para mostrar los resultados
 {
     printf("\n\nRESULTADOS: \n");
 
     printf("\nLa suma es: %.2f\n", suma);
     printf("La resta es: %.2f\n", resta);
-    if(divisionPorCero == 0)
+    if(divisionPorCero == 0) // se evalua si el divisor es 0
     {
         printf("La division es: %.2f\n", dividir);
     }
@@ -94,7 +96,7 @@ void mostrarResultados(float suma, float resta, float dividir, float multiplicar
 
     printf("La multiplicacion es: %.2f\n", multiplicar);
 
-    if(factorialNegativoUno == 0)
+    if(factorialNegativoUno == 0) // se comprueba que el numero a factorizar no sea negativo
     {
         printf("El factorial del primer operando es: %.2f\n", factorialUno);
     }
@@ -112,7 +114,7 @@ void mostrarResultados(float suma, float resta, float dividir, float multiplicar
     }
 }
 
-void comprobarDivisionPorCero(int *divisionPorCero, float numeroDos)
+void comprobarDivisionPorCero(int *divisionPorCero, float numeroDos) //funcion para comprar si divisor es 0
 {
     if(numeroDos == 0)
     {
@@ -125,7 +127,7 @@ void comprobarDivisionPorCero(int *divisionPorCero, float numeroDos)
 }
 
 void comprobarFactorialNegativo(int *factorialNegativoUno, int *factorialNegativoDos, float numeroUno, float numeroDos)
-{
+{ //funcion para comprobar si el numero a factoizar es negativo
     if (numeroUno < 0)
     {
         *factorialNegativoUno = 1;
