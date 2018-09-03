@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1535983497 source:c:\users\alumno\desktop\tp-laboratio\tp_laboratorio_1\bibliotecacalculos.c
+	<stdio.h>
+	"bibliotecaCalculos.h"
+
+1535983391 c:\users\alumno\desktop\tp-laboratio\tp_laboratorio_1\bibliotecacalculos.h
+

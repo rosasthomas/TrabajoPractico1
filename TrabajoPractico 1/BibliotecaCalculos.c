@@ -1,5 +1,6 @@
+
 #include <stdio.h>
-#include "BibliotecaCalculos.h"
+#include "bibliotecaCalculos.h"
 
 void sumar(float numeroUno, float numeroDos)
 {
@@ -46,5 +47,5 @@ void factorial(float numeroUno, float numeroDos)
 {
     float factorial;
 
-    factorial =
+    factorial = 1;
 }

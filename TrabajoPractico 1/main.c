@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Biblioteca.h"
-#include "BibliotecaCalculos.h"
+#include "bibliotecaOpciones.h"
+#include "bibliotecaCalculos.h"
 
 int main()
 {

@@ -1,7 +1,8 @@
+
 #include <stdio.h>
 #include <stdlib.h>
-#include "Biblioteca.h"
-#include "BibliotecaCalculos.h"
+#include "bibliotecaOpciones.h"
+#include "bibliotecaCalculos.h"
 
 void opciones(void)
 {
@@ -29,7 +30,7 @@ void opciones(void)
             numeroDos = pedirNumero("Ingrese el segundo operando: ");
             break;
         case 3:
-            calcularTodo();
+            calcularTodo(numeroUno. numeroDos);
 
             break;
         case 4:
@@ -67,4 +68,3 @@ float calcularTodo(float numeroUno, float numeroDos)
             multiplicar(numeroUno, numeroDos);
             factorial(numeroUno, numeroDos);
 }
-
