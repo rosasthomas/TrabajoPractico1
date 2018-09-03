@@ -5,7 +5,7 @@
 
 int main()
 {
-    opciones(void);
+    opciones();
 
     return 0;
 }

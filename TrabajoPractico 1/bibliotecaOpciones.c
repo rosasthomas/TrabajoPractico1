@@ -30,7 +30,7 @@ void opciones(void)
             numeroDos = pedirNumero("Ingrese el segundo operando: ");
             break;
         case 3:
-            calcularTodo(numeroUno. numeroDos);
+            calcularTodo(numeroUno, numeroDos);
 
             break;
         case 4:
