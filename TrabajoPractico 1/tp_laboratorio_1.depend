@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1535994217 source:c:\users\gustavo\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecacalculos.c
+1536000234 source:c:\users\gustavo\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecacalculos.c
 	<stdio.h>
 	"bibliotecaCalculos.h"
 
-1535994217 c:\users\gustavo\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecacalculos.h
+1535998599 c:\users\gustavo\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecacalculos.h
 
 1535994382 source:c:\users\gustavo\desktop\tp_laboratorio_1\trabajopractico 1\main.c
 	<stdio.h>
@@ -11,5 +11,11 @@
 	"bibliotecaOpciones.h"
 	"bibliotecaCalculos.h"
 
-1535994217 c:\users\gustavo\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecaopciones.h
+1535996881 c:\users\gustavo\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecaopciones.h
+
+1536000151 source:c:\users\gustavo\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecaopciones.c
+	<stdio.h>
+	<stdlib.h>
+	"bibliotecaOpciones.h"
+	"bibliotecaCalculos.h"
 

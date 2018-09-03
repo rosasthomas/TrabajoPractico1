@@ -1,4 +1,10 @@
 
+/** \brief menu de opciones
+ *
+ * \param void no recibe nada
+ * \return void no devuelve nada
+ *
+ */
 void opciones(void);
 
 /** \brief pide un flotante y lo retorna
