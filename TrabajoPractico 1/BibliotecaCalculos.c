@@ -99,7 +99,7 @@ void mostrarResultados(float suma, float resta, float dividir, float multiplicar
     if(comprobarUno == 0) // se comprueba que el numero a factorizar no sea negativo
     {
         printf("El factorial del primer operando es: %.2f\n", factorialUno);
-        printf("(Si se ingreso un numero con decimal, es redondeado.)\n");
+        printf("(Si se ingreso un numero con decimal, es redondeado para abajo.)\n");
     }
     else
     {
@@ -108,7 +108,7 @@ void mostrarResultados(float suma, float resta, float dividir, float multiplicar
     if(comprobarDos == 0)
     {
         printf("El factorial del segundo operando es: %.2f\n", factorialDos);
-        printf("(Si se ingreso un numero con decimal, es redondeado.)\n");
+        printf("(Si se ingreso un numero con decimal, es redondeado para abajo.)\n");
     }
     else
     {
