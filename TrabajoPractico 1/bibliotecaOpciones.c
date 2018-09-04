@@ -16,8 +16,8 @@ void opciones(void)
     float factorialUno;
     float factorialDos;
     int divisionPorCero = 0;
-    int factorialNegativoUno = 0;
-    int factorialNegativoDos = 0;
+    int comprobarUno = 0;
+    int comprobarDos = 0;
 
     printf("CALCULADORA\n\n");
     do
@@ -41,7 +41,7 @@ void opciones(void)
         case 3: //se llama a las funciones de comprobacion y para calcular los resultados
             calcularTodo(numeroUno, numeroDos, &suma, &resta, &division, &multiplicar, &factorialUno, &factorialDos);
             comprobarDivisionPorCero(&divisionPorCero, numeroDos);
-            comprobarFactorialNegativo(&factorialNegativoUno, &factorialNegativoDos, numeroUno, numeroDos);
+            comprobarFactorialNegativo(&comprobarUno, &comprobarDos, numeroUno, numeroDos);
             break;
         case 4: // se muestran los resultados de las operaciones
             system("pause");
@@ -49,7 +49,7 @@ void opciones(void)
             printf("El primer numero es: %.2f\n", numeroUno);
             printf("El segundo numero es: %.2f\n", numeroDos);
 
-           mostrarResultados(suma, resta, division, multiplicar, factorialUno, factorialDos, divisionPorCero, factorialNegativoUno, factorialNegativoDos);
+           mostrarResultados(suma, resta, division, multiplicar, factorialUno, factorialDos, divisionPorCero, comprobarUno, comprobarDos);
             break;
         case 5:
             opcion = 5;

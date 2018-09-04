@@ -19,3 +19,23 @@
 	"bibliotecaOpciones.h"
 	"bibliotecaCalculos.h"
 
+1536062229 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecacalculos.c
+	<stdio.h>
+	"bibliotecaCalculos.h"
+
+1536062206 c:\users\alumno\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecacalculos.h
+
+1536062206 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecaopciones.c
+	<stdio.h>
+	<stdlib.h>
+	"bibliotecaOpciones.h"
+	"bibliotecaCalculos.h"
+
+1536062206 c:\users\alumno\desktop\tp_laboratorio_1\trabajopractico 1\bibliotecaopciones.h
+
+1536062206 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajopractico 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"bibliotecaOpciones.h"
+	"bibliotecaCalculos.h"
+

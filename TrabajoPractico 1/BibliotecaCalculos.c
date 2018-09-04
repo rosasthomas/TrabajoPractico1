@@ -51,8 +51,8 @@ float factorial(float numero) //funcion para realizar un factorial
     return resultado;
 }
 
-void calcularTodo(float numeroUno, float numeroDos, float *suma, float *resta, float *division, float *multiplicacion,
-                  float *factorialUno, float *factorialDos) //funcion que llama a las funciones de los calculos
+void calcularTodo(float numeroUno, float numeroDos, float* suma, float* resta, float* division, float* multiplicacion,
+                  float* factorialUno, float* factorialDos) //funcion que llama a las funciones de los calculos
 {
 
     *suma = sumar(numeroUno, numeroDos);
@@ -79,7 +79,7 @@ void calcularTodo(float numeroUno, float numeroDos, float *suma, float *resta, f
 }
 
 void mostrarResultados(float suma, float resta, float dividir, float multiplicar, float factorialUno, float factorialDos,
-                       int divisionPorCero, int factorialNegativoUno, int factorialNegativoDos) //funcion para mostrar los resultados
+                       int divisionPorCero, int comprobarUno, int comprobarDos) //funcion para mostrar los resultados
 {
     printf("\n\nRESULTADOS: \n");
 
@@ -96,25 +96,25 @@ void mostrarResultados(float suma, float resta, float dividir, float multiplicar
 
     printf("La multiplicacion es: %.2f\n", multiplicar);
 
-    if(factorialNegativoUno == 0) // se comprueba que el numero a factorizar no sea negativo
+    if(comprobarUno == 0) // se comprueba que el numero a factorizar no sea negativo
     {
         printf("El factorial del primer operando es: %.2f\n", factorialUno);
     }
     else
     {
-        printf("No se puede factorizar por un numero negativo.\n");
+        printf("Solo se pueden factorizar numeros enteros.\n");
     }
-    if(factorialNegativoDos == 0)
+    if(comprobarDos == 0)
     {
         printf("El factorial del segundo operando es: %.2f\n", factorialDos);
     }
     else
     {
-        printf("No se puede factorizar por un numero negativo.\n");
+        printf("Solo se pueden factorizar numeros enteros.\n");
     }
 }
 
-void comprobarDivisionPorCero(int *divisionPorCero, float numeroDos) //funcion para comprar si divisor es 0
+void comprobarDivisionPorCero(int* divisionPorCero, float numeroDos) //funcion para comprar si divisor es 0
 {
     if(numeroDos == 0)
     {
@@ -126,22 +126,22 @@ void comprobarDivisionPorCero(int *divisionPorCero, float numeroDos) //funcion p
     }
 }
 
-void comprobarFactorialNegativo(int *factorialNegativoUno, int *factorialNegativoDos, float numeroUno, float numeroDos)
+void comprobarFactorialNegativo(int* comprobarUno, int* comprobarDos, float numeroUno, float numeroDos)
 { //funcion para comprobar si el numero a factoizar es negativo
-    if (numeroUno < 0)
+    if (numeroUno < 0 || numeroUno == float)
     {
-        *factorialNegativoUno = 1;
+        *comprobarUno = 1;
     }
     else
     {
-        *factorialNegativoUno = 0;
+        *comprobarUno = 0;
     }
-    if (numeroDos < 0)
+    if (numeroDos < 0 || numeroDos == float)
     {
-        *factorialNegativoDos = 1;
+        *comprobarDos = 1;
     }
     else
     {
-        *factorialNegativoDos = 0;
+        *comprobarDos = 0;
     }
 }
