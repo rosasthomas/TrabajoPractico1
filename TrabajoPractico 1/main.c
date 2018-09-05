@@ -6,6 +6,5 @@
 int main()
 {
     opciones(); //Se llama a la funcion opciones
-
     return 0;
 }

@@ -94,11 +94,9 @@ void comprobarDivisionPorCero(int*, float);
 
 /** \brief comprueba si los operandos son negativos
  *
- * \param int*  recibe la direccion de memoria de la primer bandera
- * \param int*  recibe la direccion de memoria de la segunda bandera
- * \param float recibe el primero numero
- * \param float recibe el segundo numero
+ * \param int*  recibe la direccion de memoria de la bandera
+ * \param float recibe el numero
  * \return void no devuelve nada
  *
  */
-void comprobarFactorialNegativo(int*, int*, float, float);
+void comprobarNumero(int*, float);

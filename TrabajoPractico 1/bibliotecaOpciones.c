@@ -7,8 +7,8 @@
 void opciones(void)
 {
     int opcion;
-    float numeroUno;
-    float numeroDos;
+    float numeroUno = 0;
+    float numeroDos = 0;
     float suma;
     float resta;
     float division;
@@ -34,14 +34,16 @@ void opciones(void)
         {
         case 1:
             numeroUno = pedirNumero("Ingrese el primer operando: ");// se llama a la funcion de pedir un numero
+            comprobarNumero(&comprobarUno, numeroUno);
             break;
         case 2:
             numeroDos = pedirNumero("Ingrese el segundo operando: ");
-            break;
-        case 3: //se llama a las funciones de comprobacion y para calcular los resultados
-            calcularTodo(numeroUno, numeroDos, &suma, &resta, &division, &multiplicar, &factorialUno, &factorialDos);
             comprobarDivisionPorCero(&divisionPorCero, numeroDos);
-            comprobarFactorialNegativo(&comprobarUno, &comprobarDos, numeroUno, numeroDos);
+            comprobarNumero(&comprobarDos, numeroDos);
+            break;
+        case 3: //se llama a la funcion para calcular los resultados
+            calcularTodo(numeroUno, numeroDos, &suma, &resta, &division, &multiplicar, &factorialUno, &factorialDos);
+
             break;
         case 4: // se muestran los resultados de las operaciones
             system("pause");

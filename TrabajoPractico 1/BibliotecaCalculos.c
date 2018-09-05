@@ -99,7 +99,6 @@ void mostrarResultados(float suma, float resta, float dividir, float multiplicar
     if(comprobarUno == 0) // se comprueba que el numero a factorizar no sea negativo
     {
         printf("El factorial del primer operando es: %.2f\n", factorialUno);
-        printf("(Si se ingreso un numero con decimal, es redondeado para abajo.)\n");
     }
     else
     {
@@ -108,7 +107,6 @@ void mostrarResultados(float suma, float resta, float dividir, float multiplicar
     if(comprobarDos == 0)
     {
         printf("El factorial del segundo operando es: %.2f\n", factorialDos);
-        printf("(Si se ingreso un numero con decimal, es redondeado para abajo.)\n");
     }
     else
     {
@@ -128,22 +126,23 @@ void comprobarDivisionPorCero(int* divisionPorCero, float numeroDos) //funcion p
     }
 }
 
-void comprobarFactorialNegativo(int* comprobarUno, int* comprobarDos, float numeroUno, float numeroDos)
-{ //funcion para comprobar si el numero a factoizar es negativo
-    if (numeroUno < 0)
+void comprobarNumero(int* comprobar, float numero)
+{
+    //funcion para comprobar si el numero a factoizar es negativo o con decimales
+    int entero;
+
+    entero = numero;
+
+    if (numero < 0) //Comprueba si es negativo
     {
-        *comprobarUno = 1;
+        *comprobar = 1;
+    }
+    else if(numero - entero != 0) //comprueba si tiene decimales
+    {
+        *comprobar = 1;
     }
     else
     {
-        *comprobarUno = 0;
-    }
-    if (numeroDos < 0)
-    {
-        *comprobarDos = 1;
-    }
-    else
-    {
-        *comprobarDos = 0;
+        *comprobar = 0;
     }
 }
