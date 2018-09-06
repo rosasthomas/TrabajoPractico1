@@ -19,11 +19,12 @@ void opciones(void)
     int comprobarUno = 0;
     int comprobarDos = 0;
 
-    printf("CALCULADORA\n\n");
+
     do
     {
-        printf("\n1.Ingresar el primer operando.\n");
-        printf("2.Ingresar el segundo operando.\n");
+        printf("CALCULADORA\n\n");
+        printf("\n1.Ingresar el primer operando = %.2f.\n", numeroUno);
+        printf("2.Ingresar el segundo operando = %.2f.\n", numeroDos);
         printf("3.Calcular todas las operaciones.\n");  //menu de opciones
         printf("4.Informar resultados.\n");
         printf("5.Salir\n");
@@ -61,8 +62,6 @@ void opciones(void)
         }
         system("pause");
         system("cls");
-        printf("El primer numero es: %.2f\n", numeroUno);
-        printf("El segundo numero es: %.2f\n", numeroDos);
     }
     while(opcion != 5);
 }
