@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1538435085 source:c:\users\gustavo\desktop\tp_laboratorio_1\trabajo_practico_2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"arrayEmployees.h"
+	"bibliotecaGetsYComprobaciones.h"
+
+1538433692 c:\users\gustavo\desktop\tp_laboratorio_1\trabajo_practico_2\arrayemployees.h
+
+1538181655 c:\users\gustavo\desktop\tp_laboratorio_1\trabajo_practico_2\bibliotecagetsycomprobaciones.h
+
+1538416058 source:c:\users\gustavo\desktop\tp_laboratorio_1\trabajo_practico_2\bibliotecagetsycomprobaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1538432536 source:c:\users\gustavo\desktop\tp_laboratorio_1\trabajo_practico_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"bibliotecaGetsYComprobaciones.h"
+	"arrayEmployees.h"
+
