@@ -196,3 +196,10 @@ void sortUp(sEmployee listEmployees[], int len);
  *
  */
 void salaryInfo(sEmployee listEmployee[], int len);
+/** \brief initialize ABM of employees
+ *
+ * \param void
+ * \return void
+ *
+ */
+void abmEmployees(void);
